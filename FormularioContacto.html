@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilForm.css">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="redes.css">
+    <title>Contactanos</title>
+    <script>
+        function valida(f){
+            var ok = true;
+            var msg = ("Por favor ingresa los datos: \n");
+            var mgstrue = ("Sus datos se han enviado exitosamente...")
+
+            if (f.elements["t1"].value=="") {
+                msg+="-Nombres\n"
+                ok = false
+            }
+            if (f.elements["t3"].value=="") {
+                msg+="-Apellidos\n"
+                ok = false
+            }
+            if (f.elements["t4"].value=="") {
+                msg+="-Telefono\n"
+                ok = false
+            }
+            if (f.elements["t5"].value=="") {
+                msg+="-Email\n"
+                ok = false
+            }
+            if (f.elements["t6"].value=="") {
+                msg+="-Domicilio\n"
+                ok = false
+            }
+            if (f.elements["t7"].value=="") {
+                msg+="-Edad\n"
+                ok = false
+            }
+            if (f.elements["t8"].value=="") {
+                msg+="-Semana de contacto\n"
+                ok = false
+            }
+            if (f.elements["t9"].value=="") {
+                msg+="-Contraseña de contacto\n"
+                ok = false
+            }
+
+            if (f.elements["t10"].value=="") {
+                msg+="-Propuesta('Pues queremos saber tus ideas')\n"
+                ok = false
+            }
+
+            if (f.elements["t11"].checked ==false) {
+                msg+="-Terminos y condiciones\n"
+                ok = false
+            }
+
+            if (ok==false){
+            alert(msg);
+            return ok;
+        }
+        if (ok==true){
+            alert(mgstrue);
+            return ok;
+        }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logoCC.jpg" width="90px">
+            <p class="logo">Conciencia CECyTEM</p>
+            <nav>
+                <a href="Proyecto_Avance1.html">Inicio</a>
+                <a href="FormularioContacto.html">Contactanos</a>
+                <a href="Galeria.html">Galeria Online</a>
+            </nav>
+        </div>
+    </header>
+    <br><br><br>
+    <section class="formd">
+        <h3>Formulario De Contacto</h3>
+        <form action="" method="post" onsubmit="return valida(this)">
+        <input id="t1" class="controls" type="text" placeholder="Ingresa tus Nombres">
+        <input id="t3" class="controls" type="text" placeholder="Ingresa tus Apellidos">
+        <input id="t4" class="controls" type="text" placeholder="Ingresa tu Numero de telefono">
+        <input id="t5" class="controls" type="email" placeholder="Ingresa tu email">
+        <input id="t6" class="controls" type="text" placeholder="Ingresa tu Domicilio">
+        <input id="t7" class="controls" type="number" placeholder="Ingresa tu Edad">
+        <input id="t8" class="controls" type="date" placeholder="Ingresa ">
+        <input id="t9" class="controls" type="password" placeholder="Ingresa una contrase&ntilde;a de contacto">
+        <textarea id="t10" class="controls"  placeholder="Ingresa tu propuesta "></textarea>
+        <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p><br><br><br><input id="t11" class="controls" type="checkbox">
+        <br>
+        <input class="boton"type="submit" value="Enviar">
+    </form>
+    </section>
+    <br><br>
+    <div class="social">
+        <ul>
+            <li><a href="https://instagram.com/consciencia_cecytem_mx?igshid=YmMyMTA2M2Y="  target="-blank" class="icon-instagram"><img src="intagram.png" width="50px"></a></li>
+            <li><a href="mailto:conscienciacecytem@gmail.com" target="-blank" class="icon-mail"><img src="Gmailic.png" width="50px"></a></li>
+            <li><a href="https://twitter.com/ConcienciaCECy?t=HNcgBAjd_gh-7khTuYQdyA&s=08" target="-blank" class="icon-twitter"><img src="twiter.png" width="50px"></a></li>
+            <li><a href="https://youtube.com/channel/UCaFvw0gegEF7AjKTuR7kUoA" target="_blank" class="icon-youtube" ><img src="youtube.png" width="50px"></a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

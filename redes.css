@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkity-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.social{
+    position: fixed;
+    left: 0;
+    top: 250px;
+    z-index: 98s;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 20px 300px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+}
+.social ul li .icon-instagram{}
+.social ul li .icon-mail{}
+.social ul li .icon-twitter{}
+.social ul li .icon-youtube{}
+
+.social ul li a:hover{
+    padding: 20px 20px;
+    background:#0e0d0d;
+    
+}
+
+.over{
+    width: 95vw;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url('imgover2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.over:hover::after{
+    transform: translateY(0);
+}
+
+.over::after{
+    content: "Cuidemos el Agua";
+    font-size: 2.2em;
+    color: #fff;
+    background-color: #16456198;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 3s;
+}
+
+#imgin3{
+    width: 95vw;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url('umgejemplo.PNG');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#imgin3:hover::after{
+    transform: translateY(0);
+}
+
+#imgin3::after{
+    content: "Sistema de captacion de Agua de Lluvia";
+    font-size: 2.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    background-color: #16456198;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 3s;
+}

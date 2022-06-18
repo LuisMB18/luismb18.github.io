@@ -1,0 +1,72 @@
+.cookies{
+    display: none;
+    background-color: white;
+    padding: 20px;
+    width: calc(188%-40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 60px;
+    box-shadow: 8px 2px 20px 10px rgba(222,222,222,.25);
+    text-align: center;
+}
+
+.cookies.activo{
+    display: block;
+}
+
+.cookies .galleta{
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.cookies .titulocok
+.cookies .parrafocok{
+    margin-top: 15px;
+    font-family: monospace;
+}
+.cookies .botoncok{
+    width: 100%;
+    border-radius: 15px;
+    background-color: blueviolet;
+    font-family: monospace;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 780;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.cookies .botoncok:hover{
+    background-color: black;
+}
+.cookies .enlace{
+    color: rgb(65, 65, 185);
+    text-decoration: none;
+    font-size: 14px;
+}
+.cookies .enlace:hover{
+    text-decoration: rgb(68, 68, 187);
+}
+
+.fondocook{
+    display: none;
+    background: rgba(0,0,0,.20);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.fondocook.activo{
+    display: block;
+}
